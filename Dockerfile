@@ -1,5 +1,5 @@
-# Use debian/latest as the base image
-FROM debian/latest
+# Use debian/bookworm as the base image
+FROM debian/bookworm
 
 # Update packages and install locales
 RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1 && apt install locales -y \
