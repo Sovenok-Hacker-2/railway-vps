@@ -1,5 +1,5 @@
-# Use debian/bookworm as the base image
-FROM debian/bookworm
+# Use archlinux as the base image
+FROM archlinux
 
 # Update packages and install locales
 RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1 && apt install locales -y \
